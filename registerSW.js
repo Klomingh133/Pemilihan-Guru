@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Pemilihan-Guru/sw.js', { scope: '/Pemilihan-Guru/' })})}
