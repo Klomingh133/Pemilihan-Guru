@@ -14,73 +14,73 @@ export const INITIAL_TEACHERS: Teacher[] = [
   // --- 12 GURU DENGAN FOTO ---
   {
     id: "teacher-01",
-    name: "Guru 1",
+    name: "Bu Ayu Miana",
     photoUrl: "/photos/teacher-01.png",
     displayOrder: 1
   },
   {
     id: "teacher-02",
-    name: "Guru 2",
+    name: "Pak Nova",
     photoUrl: "/photos/teacher-02.png",
     displayOrder: 2
   },
   {
     id: "teacher-03",
-    name: "Guru 3",
+    name: "Pak Komang Sony",
     photoUrl: "/photos/teacher-03.png",
     displayOrder: 3
   },
   {
     id: "teacher-04",
-    name: "Guru 4",
+    name: "Bu Wayan Suparni",
     photoUrl: "/photos/teacher-04.png",
     displayOrder: 4
   },
   {
     id: "teacher-05",
-    name: "Guru 5",
+    name: "Bu Yeyen",
     photoUrl: "/photos/teacher-05.png",
     displayOrder: 5
   },
   {
     id: "teacher-06",
-    name: "Guru 6",
+    name: "Bu Tut Ayu",
     photoUrl: "/photos/teacher-06.png",
     displayOrder: 6
   },
   {
     id: "teacher-07",
-    name: "Guru 7",
+    name: "Mister Eret",
     photoUrl: "/photos/teacher-07.png",
     displayOrder: 7
   },
   {
     id: "teacher-08",
-    name: "Guru 8",
+    name: "Bu Dian",
     photoUrl: "/photos/teacher-08.png",
     displayOrder: 8
   },
   {
     id: "teacher-09",
-    name: "Guru 9",
+    name: "Miss Mita",
     photoUrl: "/photos/teacher-09.png",
     displayOrder: 9
   },
   {
     id: "teacher-10",
-    name: "Guru 10",
+    name: "Bu Eka",
     photoUrl: "/photos/teacher-10.png",
     displayOrder: 10
   },
   {
     id: "teacher-11",
-    name: "Guru 11",
+    name: "Bu Devi",
     photoUrl: "/photos/teacher-11.png",
     displayOrder: 11
   },
   {
     id: "teacher-12",
-    name: "Guru 12",
+    name: "Bu Tu Yeni",
     photoUrl: "/photos/teacher-12.png",
     displayOrder: 12
   },
