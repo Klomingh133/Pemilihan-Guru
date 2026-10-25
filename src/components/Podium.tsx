@@ -1,6 +1,7 @@
 import React from 'react';
 import { TeacherResult } from '../types';
 import { Trophy, User, Sparkles } from 'lucide-react';
+import { formatPhotoUrl } from '../utils/formatPhotoUrl';
 
 interface PodiumProps {
   rank1: TeacherResult[] | TeacherResult | null;
@@ -31,7 +32,7 @@ export const Podium: React.FC<PodiumProps> = ({
               <div className="relative mb-3.5 h-32 w-32 sm:h-36 sm:w-36 rounded-3xl overflow-hidden border-4 border-slate-300 bg-slate-900 shadow-2xl ring-4 ring-slate-400/30">
                 {teacher2.photoUrl ? (
                   <img
-                    src={teacher2.photoUrl}
+                    src={formatPhotoUrl(teacher2.photoUrl)!}
                     alt={teacher2.name}
                     className="h-full w-full object-cover object-top"
                   />
@@ -80,7 +81,7 @@ export const Podium: React.FC<PodiumProps> = ({
               <div className="relative mb-3.5 h-40 w-40 sm:h-48 sm:w-48 rounded-3xl overflow-hidden border-4 border-amber-400 bg-slate-900 shadow-2xl ring-8 ring-amber-400/30 transform hover:scale-105 transition-transform duration-300">
                 {teacher1.photoUrl ? (
                   <img
-                    src={teacher1.photoUrl}
+                    src={formatPhotoUrl(teacher1.photoUrl)!}
                     alt={teacher1.name}
                     className="h-full w-full object-cover object-top"
                   />
@@ -141,7 +142,7 @@ export const Podium: React.FC<PodiumProps> = ({
               <div className="relative mb-3.5 h-32 w-32 sm:h-36 sm:w-36 rounded-3xl overflow-hidden border-4 border-amber-700 bg-slate-900 shadow-2xl ring-4 ring-amber-700/30">
                 {teacher3.photoUrl ? (
                   <img
-                    src={teacher3.photoUrl}
+                    src={formatPhotoUrl(teacher3.photoUrl)!}
                     alt={teacher3.name}
                     className="h-full w-full object-cover object-top"
                   />

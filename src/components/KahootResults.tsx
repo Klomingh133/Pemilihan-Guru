@@ -4,6 +4,7 @@ import { dbService } from '../services/db';
 import { ElectionResults } from '../types';
 import { Podium } from './Podium';
 import { Leaderboard } from './Leaderboard';
+import { formatPhotoUrl } from '../utils/formatPhotoUrl';
 import { 
   Trophy, 
   Sparkles, 
@@ -287,7 +288,7 @@ export const KahootResults: React.FC<KahootResultsProps> = ({
                 <div className="flex flex-col items-center">
                   <div className="h-36 w-36 sm:h-40 sm:w-40 rounded-3xl overflow-hidden border-4 border-amber-700 bg-slate-800 shadow-2xl mb-4 ring-4 ring-amber-700/30">
                     {rank3Teacher.photoUrl ? (
-                      <img src={rank3Teacher.photoUrl} alt={rank3Teacher.name} className="h-full w-full object-cover object-top" />
+                      <img src={formatPhotoUrl(rank3Teacher.photoUrl)!} alt={rank3Teacher.name} className="h-full w-full object-cover object-top" />
                     ) : (
                       <div className="h-full w-full flex flex-col items-center justify-center text-slate-400 p-3">
                         <User className="h-12 w-12 mb-1 text-amber-600" />
@@ -321,7 +322,7 @@ export const KahootResults: React.FC<KahootResultsProps> = ({
                 <div className="flex flex-col items-center">
                   <div className="h-36 w-36 sm:h-40 sm:w-40 rounded-3xl overflow-hidden border-4 border-slate-300 bg-slate-800 shadow-2xl mb-4 ring-4 ring-slate-300/30">
                     {rank2Teacher.photoUrl ? (
-                      <img src={rank2Teacher.photoUrl} alt={rank2Teacher.name} className="h-full w-full object-cover object-top" />
+                      <img src={formatPhotoUrl(rank2Teacher.photoUrl)!} alt={rank2Teacher.name} className="h-full w-full object-cover object-top" />
                     ) : (
                       <div className="h-full w-full flex flex-col items-center justify-center text-slate-400 p-3">
                         <User className="h-12 w-12 mb-1 text-slate-400" />
@@ -371,7 +372,7 @@ export const KahootResults: React.FC<KahootResultsProps> = ({
                   <div className="relative mx-auto mb-6 h-52 w-52 sm:h-64 sm:w-64 rounded-3xl overflow-hidden border-4 border-yellow-300 shadow-2xl bg-slate-800 ring-4 ring-amber-400/50">
                     {winner.photoUrl ? (
                       <img
-                        src={winner.photoUrl}
+                        src={formatPhotoUrl(winner.photoUrl)!}
                         alt={winner.name}
                         className="h-full w-full object-cover object-top"
                       />
@@ -436,7 +437,7 @@ export const KahootResults: React.FC<KahootResultsProps> = ({
                   <div key={w.id} className="inline-flex items-center gap-4 sm:gap-5 bg-slate-900/90 border-2 border-amber-400 rounded-3xl p-4 sm:p-6 shadow-2xl ring-4 ring-amber-400/20">
                     <div className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl overflow-hidden border-2 border-amber-400 bg-slate-800 shrink-0">
                       {w.photoUrl ? (
-                        <img src={w.photoUrl} alt={w.name} className="h-full w-full object-cover object-top" />
+                        <img src={formatPhotoUrl(w.photoUrl)!} alt={w.name} className="h-full w-full object-cover object-top" />
                       ) : (
                         <div className="h-full w-full flex items-center justify-center text-amber-400">
                           <User className="h-10 w-10" />

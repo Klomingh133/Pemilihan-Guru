@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Teacher } from '../types';
 import { TeacherCard } from './TeacherCard';
 import { ArrowLeft, ArrowRight, UserCheck, HelpCircle, Search, Sparkles, Lock, CheckCircle2, UserPlus } from 'lucide-react';
+import { formatPhotoUrl } from '../utils/formatPhotoUrl';
 
 interface TeacherGridProps {
   teachers: Teacher[];
@@ -222,7 +223,7 @@ export const TeacherGrid: React.FC<TeacherGridProps> = ({
                 <div className="h-9 w-9 sm:h-11 sm:w-11 rounded-xl overflow-hidden bg-slate-200 shrink-0 border-2 border-blue-400 shadow-xs">
                   {selectedTeacher.photoUrl ? (
                     <img
-                      src={selectedTeacher.photoUrl}
+                      src={formatPhotoUrl(selectedTeacher.photoUrl)!}
                       alt={selectedTeacher.name}
                       className="h-full w-full object-cover object-top"
                     />

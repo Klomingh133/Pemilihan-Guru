@@ -1,6 +1,7 @@
 import React from 'react';
 import { TeacherResult } from '../types';
 import { Trophy, Medal, User, Award } from 'lucide-react';
+import { formatPhotoUrl } from '../utils/formatPhotoUrl';
 
 interface LeaderboardProps {
   results: TeacherResult[];
@@ -71,7 +72,7 @@ export const Leaderboard: React.FC<LeaderboardProps> = ({
                 <div className="relative w-12 h-12 sm:w-14 sm:h-14 aspect-square shrink-0 overflow-hidden rounded-2xl bg-slate-800 border-2 border-slate-700 shadow-sm">
                   {teacher.photoUrl ? (
                     <img
-                      src={teacher.photoUrl}
+                      src={formatPhotoUrl(teacher.photoUrl)!}
                       alt={teacher.name}
                       className="h-full w-full object-cover object-top"
                     />

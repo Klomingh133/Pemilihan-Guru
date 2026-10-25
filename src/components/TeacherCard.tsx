@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Teacher } from '../types';
 import { Check, User } from 'lucide-react';
+import { formatPhotoUrl } from '../utils/formatPhotoUrl';
 
 interface TeacherCardProps {
   teacher: Teacher;
@@ -46,7 +47,7 @@ export const TeacherCard: React.FC<TeacherCardProps> = ({
         <div className="relative mb-3.5 aspect-square w-full overflow-hidden rounded-2xl bg-slate-100 shadow-inner border border-slate-200/60">
           {showPhoto ? (
             <img
-              src={teacher.photoUrl!}
+              src={formatPhotoUrl(teacher.photoUrl)!}
               alt={teacher.name}
               loading="lazy"
               className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
