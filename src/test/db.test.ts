@@ -31,8 +31,8 @@ describe('IndexedDB Service & Voting Logic', () => {
     const withPhoto = teachers.filter(t => t.photoUrl !== null);
     const withoutPhoto = teachers.filter(t => t.photoUrl === null);
 
-    expect(withPhoto).toHaveLength(12);
-    expect(withoutPhoto).toHaveLength(9);
+    expect(withPhoto).toHaveLength(18);
+    expect(withoutPhoto).toHaveLength(3);
   });
 
   it('dapat menyimpan 350 hingga 500 suara dengan andal', async () => {

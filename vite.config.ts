@@ -11,7 +11,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'photos/*.png', 'photos/*.jpg'],
+      includeAssets: [
+        'favicon.svg',
+        'apple-touch-icon.png',
+        'photos/*.png',
+        'photos/*.jpg',
+        'photos/*.jpeg',
+        'photos/*.webp'
+      ],
       manifest: {
         name: 'Pemilihan Guru Favorit Hari Guru',
         short_name: 'Guru Favorit',
@@ -35,8 +42,11 @@ export default defineConfig({
         ]
       },
       workbox: {
-        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}']
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
+        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}']
       }
     })
   ],

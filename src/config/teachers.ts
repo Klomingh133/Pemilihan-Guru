@@ -5,123 +5,123 @@ import { Teacher } from '../types';
  * ---------------------------------------------------------------------
  * 1. Anda dapat mengubah 'name' (Nama Guru) secara langsung di bawah ini.
  * 2. Anda dapat mengubah 'photoUrl':
- *    - Masukkan path foto lokal di dalam folder public, contoh: '/photos/teacher-01.png'
+ *    - Masukkan path foto lokal di dalam folder public, contoh: '/photos/guru-01.png'
  *    - Atau setel ke `null` jika foto belum tersedia (akan otomatis muncul placeholder profesional).
  * 3. Anda dapat mengubah 'displayOrder' untuk menentukan urutan kemunculan di layar voting.
- * 4. Tepat 21 slot guru telah dikonfigurasi (12 guru memiliki foto, 9 guru tanpa foto).
+ * 4. Tepat 21 slot guru telah dikonfigurasi (18 guru memiliki foto, 3 guru tanpa foto).
  */
 export const INITIAL_TEACHERS: Teacher[] = [
-  // --- 12 GURU DENGAN FOTO ---
+  // --- 18 GURU DENGAN FOTO ---
   {
     id: "teacher-01",
     name: "Bu Ayu Miana",
-    photoUrl: "/photos/teacher-01.png",
+    photoUrl: "/photos/guru-01.png",
     displayOrder: 1
   },
   {
     id: "teacher-02",
     name: "Pak Nova",
-    photoUrl: "/photos/teacher-02.png",
+    photoUrl: "/photos/guru-02.png",
     displayOrder: 2
   },
   {
     id: "teacher-03",
     name: "Pak Komang Sony",
-    photoUrl: "/photos/teacher-03.png",
+    photoUrl: "/photos/guru-03.png",
     displayOrder: 3
   },
   {
     id: "teacher-04",
     name: "Bu Wayan Suparni",
-    photoUrl: "/photos/teacher-04.png",
+    photoUrl: "/photos/guru-04.png",
     displayOrder: 4
   },
   {
     id: "teacher-05",
     name: "Bu Yeyen",
-    photoUrl: "/photos/teacher-05.png",
+    photoUrl: "/photos/guru-05.png",
     displayOrder: 5
   },
   {
     id: "teacher-06",
     name: "Bu Tut Ayu",
-    photoUrl: "/photos/teacher-06.png",
+    photoUrl: "/photos/guru-06.png",
     displayOrder: 6
   },
   {
     id: "teacher-07",
     name: "Mister Eret",
-    photoUrl: "/photos/teacher-07.png",
+    photoUrl: "/photos/guru-07.png",
     displayOrder: 7
   },
   {
     id: "teacher-08",
     name: "Bu Dian",
-    photoUrl: "/photos/teacher-08.png",
+    photoUrl: "/photos/guru-08.png",
     displayOrder: 8
   },
   {
     id: "teacher-09",
     name: "Miss Mita",
-    photoUrl: "/photos/teacher-09.png",
+    photoUrl: "/photos/guru-09.jpeg",
     displayOrder: 9
   },
   {
     id: "teacher-10",
     name: "Bu Eka",
-    photoUrl: "/photos/teacher-10.png",
+    photoUrl: "/photos/guru-10.jpeg",
     displayOrder: 10
   },
   {
     id: "teacher-11",
     name: "Bu Devi",
-    photoUrl: "/photos/teacher-11.png",
+    photoUrl: "/photos/guru-11.png",
     displayOrder: 11
   },
   {
     id: "teacher-12",
     name: "Bu Tu Yeni",
-    photoUrl: "/photos/teacher-12.png",
+    photoUrl: "/photos/guru-12.png",
     displayOrder: 12
   },
-
-  // --- 9 GURU TANPA FOTO (FOTO BELUM TERSEDIA) ---
   {
     id: "teacher-13",
     name: "Guru 13",
-    photoUrl: null,
+    photoUrl: "/photos/guru-13.png",
     displayOrder: 13
   },
   {
     id: "teacher-14",
     name: "Guru 14",
-    photoUrl: null,
+    photoUrl: "/photos/guru-14.png",
     displayOrder: 14
   },
   {
     id: "teacher-15",
     name: "Guru 15",
-    photoUrl: null,
+    photoUrl: "/photos/guru-15.png",
     displayOrder: 15
   },
   {
     id: "teacher-16",
     name: "Guru 16",
-    photoUrl: null,
+    photoUrl: "/photos/guru-16.png",
     displayOrder: 16
   },
   {
     id: "teacher-17",
     name: "Guru 17",
-    photoUrl: null,
+    photoUrl: "/photos/guru-17.png",
     displayOrder: 17
   },
   {
     id: "teacher-18",
     name: "Guru 18",
-    photoUrl: null,
+    photoUrl: "/photos/guru-18.png",
     displayOrder: 18
   },
+
+  // --- 3 GURU TANPA FOTO (FOTO BELUM TERSEDIA) ---
   {
     id: "teacher-19",
     name: "Guru 19",
